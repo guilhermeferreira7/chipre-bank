@@ -1,7 +1,4 @@
-# vixe-quebrou-js
-
 GitHub Pages: 
-https://utfpr-gp.github.io/vixe-quebrou-js/.
 
 Qualidade do código
 
