@@ -1,21 +1,36 @@
 <!-- menu -->
 <header>
-    <nav class="nav-wrapper yellow darken-3">
+    <nav class="nav-extended yellow darken-3">
         <div class="container">
-            <a href="#" class="brand-logo">
-                Chipre Bank
-            </a>
-
-            <ul class="row right hide-on-med-and-down">
-                <li class="col m4 l5"><input type="text" placeholder="CPF" class="black-text"></li>
-                <li class="col m4 l5"><input type="password" placeholder="SENHA" class="black-text input-field"></li>
-                <li class="col m4 l2"><button type="submit" class="btn waves-effect waves-light green darken-1">Entrar</button></li>
-            </ul>
-
-            <a class="sidenav-trigger hide-on-large-only">
-                <i class="material-icons">menu</i>
-            </a>
+            <div class="row">
+                <div class="col s12 m4 nav-wrapper">
+                    <a href="#" class="brand-logo" id="logo">Chipre Bank</a>
+                </div>
+    
+                <form class="col s12 m8 nav-wrapper">
+                    <div class="row">
+                        <div class="input-field col s8 m4 offset-s3 center">
+                            <input placeholder="111.222.333-44" id="input-cpf" type="text" class="validate">
+                            <label class="active green-text text-darken-3" for="input-cpf">CPF</label>
+                        </div>
+                        <div class="input-field col s8 m4 offset-s3 center">
+                            <input placeholder="********" id="input-senha" type="password">
+                            <label class="active green-text text-darken-3" for="input-senha">Senha</label>
+                        </div>
+                        <div class="col s12 m4 center">
+                            <button class="btn btn-small">Entrar</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
         </div>
     </nav>
 </header>
+<br>
+<br>
+<br>
+
+
+
+
 <!-- fim menu -->

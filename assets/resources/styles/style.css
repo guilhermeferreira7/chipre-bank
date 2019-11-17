@@ -1,3 +1,7 @@
 #menu ::placeholder {
-    color: #756c6c;
+    color: #3f3b3b;
+}
+
+#logo {
+    font-size: 1.8rem;
 }
