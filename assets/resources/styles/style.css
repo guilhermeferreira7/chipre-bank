@@ -3,5 +3,9 @@
 }
 
 #logo {
-    font-size: 1.8rem;
+    font-size: 1.7rem;
+}
+
+.margin-top {
+    margin-top: 20px;
 }
