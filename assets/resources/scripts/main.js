@@ -7,7 +7,6 @@
         return document.getElementById(id);
     };
 
-
     window.addEventListener('load',  function() {
         let inputCpf = $id('input-cpf');
         let inputSenha = $id('input-senha');
