@@ -33,6 +33,10 @@
         inputSenha.onfocus = function() {
             inputSenha.setAttribute('placeholder', '********');
         };
+
+        document.forms[0].onsubmit = function(e) {
+            
+        };
     });
 
 })();
