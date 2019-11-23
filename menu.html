@@ -10,7 +10,7 @@
                 <form action="menu-user.html" class="col s12 m6 nav-wrapper margin-top right">
                     <div class="row">
                         <div class="input-field col s12 m4 l5 center">
-                            <input required placeholder="" id="input-cpf" type="text" class="validate white">
+                            <input required placeholder="" pattern="^(([0-9]{3}\.){2}[0-9]{3}-[0-9]{2})|([0-9]){11}$" id="input-cpf" type="text" class="validate white">
                             <label class="green-text text-darken-3" for="input-cpf">CPF</label>
                         </div>
                         <div class="input-field col s12 m4 l5 center">
@@ -19,7 +19,7 @@
                             <label class="green-text text-darken-3" for="input-senha">Senha</label>
                         </div>
                         <div class="col s12 m3 l2 center" id="btn-enter">
-                            <button class="btn btn-small green darken-3">Entrar</button>
+                            <button class="btn btn-small waves-effect waves-light green darken-3">Entrar</button>
                         </div>
                     </div>
                 </form>
