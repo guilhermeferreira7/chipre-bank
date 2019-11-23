@@ -15,9 +15,12 @@
         });
     }
 
-    window.onload = function() {
+    window.addEventListener('load',  function() {
         let inputCpf = $id('input-cpf');
         let inputSenha = $id('input-senha');
+
+        console.log('teste');
+        
 
         validaPadrao(inputCpf, 
             'CPF invalido, precisa estar no padrao "000.000.000-00" ou somente numeros!');
@@ -31,6 +34,6 @@
         inputSenha.onfocus = function() {
             inputSenha.setAttribute('placeholder', '********');
         };
-    };
+    });
 
 })();
