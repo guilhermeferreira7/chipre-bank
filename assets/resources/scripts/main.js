@@ -11,6 +11,8 @@
         id.addEventListener('invalid', function() {
             if (id.validity.patternMismatch) {
                 id.setCustomValidity(mensagem);
+            } else {
+                id.setCustomValidity('');
             }
         });
     }
@@ -18,9 +20,6 @@
     window.addEventListener('load',  function() {
         let inputCpf = $id('input-cpf');
         let inputSenha = $id('input-senha');
-
-        console.log('teste');
-        
 
         validaPadrao(inputCpf, 
             'CPF invalido, precisa estar no padrao "000.000.000-00" ou somente numeros!');
