@@ -9,3 +9,18 @@
 .margin-top {
     margin-top: 20px;
 }
+
+#btn-enter {
+    position: relative;
+    bottom: 10px;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+h1 a:visited,
+h1 a:link,
+h1 a:active {
+    color: #2e7d32;
+}

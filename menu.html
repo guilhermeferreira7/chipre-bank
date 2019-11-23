@@ -4,20 +4,21 @@
         <div class="container">
             <div class="row">
                 <div class="col s12 m6 nav-wrapper">
-                    <a href="#" class="brand-logo green-text text-darken-3 margin-top" id="logo">Chipre Bank</a>
+                    <a href="#" class="brand-logo green-text text-darken-3" id="logo">Chipre Bank</a>
                 </div>
     
-                <form class="col s12 m6 nav-wrapper margin-top right">
+                <form action="menu-user.html" class="col s12 m6 nav-wrapper margin-top right">
                     <div class="row">
-                        <div class="input-field col s12 m4 l5 offset-s3 center">
-                            <input placeholder="111.222.333-44" id="input-cpf" type="text" class="validate">
-                            <label class="active green-text text-darken-3" for="input-cpf">CPF</label>
+                        <div class="input-field col s12 m4 l5 center">
+                            <input required pattern="^([0-9]{11})|(([0-9]{3}\.){2}[0-9]{3}-[0-9]{2})$" placeholder="" id="input-cpf" type="text" class="validate white">
+                            <label class="green-text text-darken-3" for="input-cpf">CPF</label>
                         </div>
-                        <div class="input-field col s12 m4 l5 offset-s3 center">
-                            <input placeholder="**********" id="input-senha" type="password">
-                            <label class="active green-text text-darken-3" for="input-senha">Senha</label>
+                        <div class="input-field col s12 m4 l5 center">
+                            <input required pattern="^([A-Za-z0-9]*[0-9]+[A-Za-z0-9]*[A-Z]+[A-Za-z0-9]*)|([A-Za-z0-9]*[A-Z]+[A-Za-z0-9]*[0-9]+[A-Za-z0-9]*)$" placeholder="" id="input-senha"
+                            minlength="6" maxlength="8" type="password" class="validate white">
+                            <label class="green-text text-darken-3" for="input-senha">Senha</label>
                         </div>
-                        <div class="col s12 m3 l2 center">
+                        <div class="col s12 m3 l2 center" id="btn-enter">
                             <button class="btn btn-small green darken-3">Entrar</button>
                         </div>
                     </div>
@@ -26,9 +27,7 @@
         </div>
     </nav>
 </header>
-<br>
-<br>
-<br>
+
 
 
 

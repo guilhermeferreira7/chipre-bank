@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Chipre Bank</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--Import Google Category Font-->
+    <link rel="stylesheet" href="http://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="assets/libraries/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/libraries/materialize/css/materialize.min.css">
+    <link rel="stylesheet" href="assets/resources/styles/style.css">
+
+    <script src="assets/libraries/jquery/jquery-2.2.4.min.js"></script>
+    <script src="assets/libraries/materialize/js/materialize.min.js"></script>
+    <script src="assets/resources/scripts/main.js"></script>
+
+    <script>
+        $(function () {
+            $("#footer").load("footer.html");
+            $("#menu").load("menu.html");
+        });
+    </script>
+</head>
+
+
+<body>
+    <div id="menu"></div>
+    <main>
+        <div class="container">
+            <div class="row">
+                <div class="card medium">
+                    <div class="container uppercase">
+                        <div class="card-title center">Serviços</div>
+                        <ul>
+                            <li class="col s6">
+                                <a href="#" class="btn-large green darken-3">
+                                    <span>Tranferência</span>
+                                </a>
+                            </li>
+                            <li class="col s6">
+                                <a href="#" class="btn-large green darken-3">
+                                    <span>Depósito</span>
+                                </a>
+                            </li>
+                            <li class="col s6">
+                                <a href="#" class="btn-large green darken-3">
+                                    <span>Extrato</span>
+                                </a>
+                            </li>
+                            <li class="col s6">
+                                <a href="#" class="btn-large green darken-3">
+                                    <span>Configurações da Conta</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <div id="footer"></div>
+</body>
+
+</html>
