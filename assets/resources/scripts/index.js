@@ -7,7 +7,6 @@ window.addEventListener('load', ()=> {
     linkCriarConta.onmouseover = function() {
         linkCriarConta.classList.remove('green-text', 'text-darken-3');
         linkCriarConta.classList.add('green', 'white-text','darken-3');
-        
     };
     
     linkCriarConta.onmouseleave = function() {

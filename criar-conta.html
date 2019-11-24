@@ -22,16 +22,33 @@
     <div id="menu"></div>
     <main>
         <div class="container">
-            <form>
+            <form id="criar-conta">
                 <label>Preencha seus dados</label>
                 <div class="row">
                     <div class="input-field col s12 m6">
-                        <input type="text" pattern="^[A-ZÁ-Ù]{1}[a-zá-ù]{1,} ([a-zá-ù]{0,3} )?[A-ZÁ-Ù]{1}[a-zá-ù]{1,}( [a-zá-ù]{0,3})?( [A-ZÁ-Ù]{1}[a-zá-ù]{1,})?$" id="input-nome">
-                        <label for="input-nome">Nome</label>
+                        <i class="material-icons prefix">face</i>
+                        <input class="validate" required type="text" pattern="^[A-ZÁ-Ù]{1}[a-zá-ù]{1,} ([a-zá-ù]{0,3} )?[A-ZÁ-Ù]{1}[a-zá-ù]{1,}( [a-zá-ù]{0,3})?( [A-ZÁ-Ù]{1}[a-zá-ù]{1,})?$" id="input-nome">
+                        <label for="input-nome">Nome Completo</label>
                     </div>
                     <div class="input-field col s12 m6">
-                        <input type="text" id="input-cpf-novo">
+                        <i class="material-icons prefix">person</i>
+                        <input class="validate" required type="text" pattern="^((\d{3}\.){2}\d{3}-\d{2})|(\d){11}$" id="input-cpf-novo">
                         <label for="input-cpf-novo">CPF</label>
+                    </div>
+                    <div class="input-field col s12 m6">
+                        <i class="material-icons prefix">place</i>
+                        <input class="validate" required type="text" pattern="^((Rua)|(Av.)){1}( \w+)+, \d{1,4}$" id="input-endereco">
+                        <label for="input-endereco">Endereço</label>
+                    </div>
+                    <div class="input-field col s12 m6">
+                        <i class="material-icons prefix">email</i>
+                        <input class="validate" required type="text" pattern="^\w+@(\w+\.\w+){1}(\.\w+)*$" id="input-email">
+                        <label for="input-email">E-Mail</label>
+                    </div>
+                    <div class="input-field col s12 m6">
+                        <i class="material-icons prefix">phone</i>
+                        <input class="validate" required type="text" pattern="^\(\d\d\) \d{4,6}-\d{3,4}$" id="input-telefone" class="validate">
+                        <label for="input-telefone">Telefone</label>
                     </div>
                     <div class="input-field col s12 m6">
                         <select id="select-tipo">
@@ -42,24 +59,15 @@
                         <label for="select-tipo">Tipo de conta</label>
                     </div>
                     <div class="input-field col s12 m6">
-                        <input type="text" id="input-endereco">
-                        <label for="input-endereco">Endereço</label>
-                    </div>
-                    <div class="input-field col s12 m6">
-                        <input type="text" id="input-email">
-                        <label for="input-email">E-Mail</label>
-                    </div>
-                    <div class="input-field col s12 m6">
-                        <input type="text" id="input-telefone">
-                        <label for="input-telefone">Telefone</label>
-                    </div>
-                    <div class="input-field col s12 m6">
-                        <input pattern="^([0-9]{11})|(([0-9]{3}\.){2}[0-9]{3}-[0-9]{2})$" type="text" id="input-senha-cadastro">
+                        <i class="material-icons prefix">lock</i>
+                        <input class="validate" required type="text" pattern="^[A-ZÀ-Úa-zà-ú0-9]{4,8}$" id="input-senha-cadastro">
                         <label for="input-senha-cadastro">Senha</label>
                     </div>
                     <div class="input-field col s12 m6">
-                        <input type="text" id="input-senha-repetida">
+                        <i class="material-icons prefix">lock</i>
+                        <input class="validate" required type="text" id="input-senha-repetida">
                         <label for="input-senha-repetida">Repita a Senha</label>
+                        <span class="helper-text" data-error="A senha deve ser a mesma!"></span>
                     </div>
                     <div class="input-field col s12 center">
                         <button class="btn btn-large waves-effect waves-light">Abra sua conta</button>

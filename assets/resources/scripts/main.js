@@ -27,7 +27,7 @@
             inputSenha.setAttribute('placeholder', '********');
         };
 
-        document.forms[0].onsubmit = function(e) {
+        document.forms[0].onsubmit = function() {
             
         };
     });
