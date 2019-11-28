@@ -3,7 +3,7 @@ Qualidade do código
 - [x] Usar um Style Guide - apresentar o uso de pelo menos 10 regras do style escolhido (sugerido AirBnb)
 - [x] Usar um lint - mostrar a correção de pelo menos 5 problemas informados pelo lint (sugerido JSHint - usar o arquivo .jshintrc disponível no moodle)
 - [x] Usar strict mode
-- [ ] Usar Module Pattern
+- [x] Usar Module Pattern
 - [x] Usar pasta assets e subpastas resources e libraries para organizar o código
 - [x] Usar let ou const ao invés de var
 - [x] Nomes de arquivos minúsculos e separados por hífen (dashed-case)
