@@ -1,33 +1,26 @@
 <!-- menu -->
 <header>
-    <nav class="nav-extended yellow darken-3">
-        <div class="container">
+    <nav class="yellow darken-3">
+        <div class="nav-wrapper container">
             <div class="row">
-                <div class="col s12 m6 nav-wrapper">
-                    <a href="index.html" class="brand-logo green-text text-darken-3 bold sans">
-                        <i class="fas fa-building" id="logo"> Chipre Bank</i>
-                    </a>
-                </div>
+                <a href="index.html" class="brand-logo col l4 green-text text-darken-3">
+                    <i class="fas fa-building"> Chipre Bank</i>
+                </a>
     
-                <form action="menu-user.html" class="col s12 m6 nav-wrapper margin-top right">
-                    <div class="row">
-                        <div class="input-field col s12 m4 l5 center">
-                            <input required placeholder="" pattern="^(([0-9]{3}\.){2}[0-9]{3}-[0-9]{2})|([0-9]){11}$" id="input-cpf" type="text" class="validate white">
-                            <label class="green-text text-darken-3" for="input-cpf">CPF</label>
-                        </div>
-                        <div class="input-field col s12 m4 l5 center">
-                            <input required placeholder="" id="input-senha"
-                            minlength="6" maxlength="8" type="password" class="validate white">
-                            <label class="green-text text-darken-3" for="input-senha">Senha</label>
-                        </div>
-                        <div class="col s12 m3 l2 center" id="btn-enter">
-                            <button class="btn btn-small waves-effect waves-light green darken-3">Entrar</button>
-                        </div>
-                    </div>
-                </form>
+                <ul class="row right hide-on-med-and-down col l8">
+                    <li class="col l3"><a href="transferencia.html">Transferência</a></li>
+                    <li class="col l2"><a href="deposito.html">Depósito</a></li>
+                    <li class="col l2"><a href="#">Saldo</a></li>
+                    <li class="col l2"><a href="extrato.html">Extrato</a></li>
+                    <li class="col l3"><a href="configuracoes.html">Configurações</a></li>
+                </ul>
+                <ul id="nav-mobile" class="sidenav">
+                    <li><a href="#">Navbar Link</a></li>
+                </ul>
+                <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
             </div>
         </div>
-    </nav>
+    </nav> 
 </header>
 
 

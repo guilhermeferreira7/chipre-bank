@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>Chipre Bank</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--Import Google Category Font-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <link rel="stylesheet" href="assets/libraries/materialize/css/materialize.min.css">
+    <link rel="stylesheet" href="assets/resources/styles/style.css">
+
+    
+    <script src="assets/libraries/jquery/jquery-2.2.4.min.js"></script>
+    <script src="assets/libraries/materialize/js/materialize.min.js"></script>
+    
+</head>
+
+<body>
+    <div id="menu"></div>
+    <main id="configuracoes">
+        <div class="container">
+            <form>
+                <label>Mudar email</label>
+                <div class="row">
+                    <div class="input-field col s12 m6">
+                        <i class="material-icons prefix">email</i>
+                        <input class="validate" type="text" pattern="^\w+@(\w+\.\w+){1}(\.\w+)*$" id="input-email">
+                        <label for="input-email">E-Mail</label>
+                    </div>
+                </div>
+
+                <label>Mudar senha</label>
+                <div class="row">
+                    <div class="input-field col s12 m6">
+                        <i class="material-icons prefix">lock</i>
+                        <input class="validate" type="text" pattern="^[A-Za-z0-9]{4,8}$" id="input-nova-senha">
+                        <label for="input-nova-senha">Nova senha</label>
+                        <span class="helper-text" data-error="A senha deve ter entre 4 e 8 caracteres e aceita letras maiúsculas, letras minusculas e números"></span>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="input-field col s12 center">
+                        <button class="btn btn-large waves-effect waves-light">Confirmar Alterações</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <div id="footer"></div>
+    
+    <script src="assets/resources/scripts/init.js"></script>
+</body>
+
+</html>
