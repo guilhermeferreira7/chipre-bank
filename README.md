@@ -36,7 +36,7 @@ Eventos
 - [x] Evento de carregamento do documento - onload
 - [x] Evento de movimento do mouse
 - [ ] Evento de teclado - usar charCode ou keyCode
-- [ ] Eventos de formulário - onfocus e onblur
+- [x] Eventos de formulário - onfocus e onblur
 - [ ] Imprimir alguma propriedade do objeto event recebido como parâmetro
 
 Acesso aos elementos DOM do HTML
