@@ -8,6 +8,14 @@ main {
     margin: 3em 0;
 }
 
+#logo {
+    padding-top: 5px;
+}
+
+aside div.card-title {
+    color: #8a8383;
+}
+
 .pad-up-and-down {
     padding: 2em 0 !important;
 }
