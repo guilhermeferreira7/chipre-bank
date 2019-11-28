@@ -51,12 +51,12 @@ Tratadores de Evento
 
 - [ ] Especificar o tratador de evento inline
 - [x] Especificar o tratador de evento no carregamento da página HTML no modo tradicional - no onload
-- [ ] Especificar o tratador de evento no carregamento da página HTML com a função addEventListener - no onload
+- [x] Especificar o tratador de evento no carregamento da página HTML com a função addEventListener - no onload
 - [ ] Usar o operador this em funções tratadoras de eventos.
 
 Formulário
 
-- [ ] Validação de formulário com onsubmit usando os métodos tradicionais
+- [x] Validação de formulário com onsubmit usando os métodos tradicionais
 - [x] Validação de formulário com HTML5 API
 - [x]  Customizar as mensagens nos balões de mensagem
 - [x]  Usar os atributos de validação dos inputs
