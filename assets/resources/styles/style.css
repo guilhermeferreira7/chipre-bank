@@ -1,27 +1,18 @@
-#menu a:visited,
-#menu a:link,
-#menu a:active {
-    color: #2e7d32;
-}
-
-main {
-    margin: 3em 0;
+#menu ::placeholder {
+    color: #3f3b3b;
 }
 
 #logo {
-    padding-top: 5px;
-}
-
-aside div.card-title {
-    color: #8a8383;
-}
-
-.pad-up-and-down {
-    padding: 2em 0 !important;
+    font-size: 1.7rem;
 }
 
 .margin-top {
     margin-top: 20px;
+}
+
+#btn-enter {
+    position: relative;
+    bottom: 5px;
 }
 
 .uppercase {
@@ -32,7 +23,6 @@ h1 a:visited,
 h1 a:link,
 h1 a:active {
     color: #2e7d32;
-    text-decoration: underline;
 }
 
 .white-link:visited,

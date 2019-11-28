@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html>
 
 <head>
     <title>Chipre Bank</title>
@@ -8,7 +8,7 @@
 
     <!--Import Google Category Font-->
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <link rel="stylesheet" href="assets/libraries/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="assets/libraries/materialize/css/materialize.min.css">
     <link rel="stylesheet" href="assets/resources/styles/style.css">
     
@@ -22,16 +22,16 @@
     <div id="menu"></div>
     <main>
         <div class="container">
-            <form>
+            <form id="criar-conta">
                 <label>Preencha seus dados</label>
                 <div class="row">
                     <div class="input-field col s12 m6">
-                        <i class="material-icons prefix">person</i>
+                        <i class="material-icons prefix">face</i>
                         <input class="validate" required type="text" pattern="^[A-ZÁ-Ù]{1}[a-zá-ù]{1,} ([a-zá-ù]{0,3} )?[A-ZÁ-Ù]{1}[a-zá-ù]{1,}( [a-zá-ù]{0,3})?( [A-ZÁ-Ù]{1}[a-zá-ù]{1,})?$" id="input-nome">
                         <label for="input-nome">Nome Completo</label>
                     </div>
                     <div class="input-field col s12 m6">
-                        <i class="far fa-id-card prefix"></i>
+                        <i class="material-icons prefix">person</i>
                         <input class="validate" required type="text" pattern="^((\d{3}\.){2}\d{3}-\d{2})|(\d){11}$" id="input-cpf-novo">
                         <label for="input-cpf-novo">CPF</label>
                     </div>
@@ -60,9 +60,8 @@
                     </div>
                     <div class="input-field col s12 m6">
                         <i class="material-icons prefix">lock</i>
-                        <input class="validate" required type="text" pattern="^[A-Za-z0-9]{4,8}$" id="input-senha-cadastro">
+                        <input class="validate" required type="text" pattern="^[A-ZÀ-Úa-zà-ú0-9]{4,8}$" id="input-senha-cadastro">
                         <label for="input-senha-cadastro">Senha</label>
-                        <span class="helper-text" data-error="A senha deve ter entre 4 e 8 caracteres e aceita letras maiúsculas, letras minusculas e números"></span>
                     </div>
                     <div class="input-field col s12 m6">
                         <i class="material-icons prefix">lock</i>
@@ -79,7 +78,7 @@
     </main>
     <div id="footer"></div>
     
-    <script src="assets/resources/scripts/init.js"></script>
+    <script src="assets/resources/scripts/main.js"></script>
     <script src="assets/resources/scripts/criar-conta.js"></script>
 </body>
 
