@@ -22,6 +22,7 @@ window.addEventListener('load', function() {
     let cpf = $id('input-cpf-novo');    
     let endereco = $id('input-endereco');    
     let email = $id('input-email');    
+    let select = $id('select-tipo');
     let telefone = $id('input-telefone');    
     let senha = $id('input-senha-cadastro');
     let senhaRepetida = $id('input-senha-repetida');
@@ -33,15 +34,15 @@ window.addEventListener('load', function() {
     validaPadraoCampo(telefone, 'O telefone deve estar no formato "(42) 99999-0000"');
     validaPadraoCampo(senha, 'A senha deve ter de 4 a 8 caracteres');
 
-    //gambiarra?
     senha.onblur = function() {
         senhaRepetida.setAttribute('pattern', senha.value);
     };
-    
-    let form = $id('criar-conta');
-    
-    form.onsubmit = function(e) {
-        
-    };
+
+    $id('criar-conta').addEventListener('submit', function(e) {
+        if (select.options[0].selected) {
+            window.alert('Por favor, selecione o tipo de conta!');
+            e.preventDefault();
+        }
+    });
 });
 
