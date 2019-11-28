@@ -11,7 +11,7 @@ Qualidade do código
 Caixas de Diálogo
 
 - [ ] prompt
-- [ ] alert
+- [x] alert
 - [ ] confirm
 
 Temporizadores
@@ -23,13 +23,12 @@ Funções
 
 - [x] Função anônima com argumento
 - [ ] Função anônima sem argumento
-- [ ] Função anônima com retorno
+- [x] Função anônima com retorno
 - [x] Função auto-executável
 - [x] Função com nome
 - [ ] Função aninhada/local - declarar uma função dentro de outra
 - [ ] Passagem de uma função como parâmetro
 - [ ] Função Flecha - Arrow Function
-
 
 Eventos
 
