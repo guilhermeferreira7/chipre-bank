@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
 
 <head>
     <title>Chipre Bank</title>
@@ -28,14 +28,19 @@
                         <i class="material-icons prefix">person</i>
                         <input class="validate" required type="text" pattern="^((\d{3}\.){2}\d{3}-\d{2})|(\d){11}$" id="input-cpf-debito">
                         <label for="input-cpf-debito">CPF</label>
+                        <span class="helper-text" data-error="CPF inválido!"></span>
                     </div>
-                </div>
-                <div class="row">
                     <div class="input-field col s12 m6">
                         <i class="material-icons prefix">lock</i>
                         <input class="validate" required type="text" id="input-senha-confirmar">
                         <label for="input-senha-confirmar">Senha</label>
                         <span class="helper-text" data-error="Senha errada"></span>
+                    </div>
+                    <div class="input-field col s12 m6">
+                        <i class="material-icons prefix">attach_money</i>
+                        <input class="validate" required type="number" min="1" max="" id="input-valor">
+                        <label for="input-valor">Valor</label>
+                        <span class="helper-text" data-error="Saldo insuficiente"></span>
                     </div>
                 </div>
                 
@@ -45,6 +50,12 @@
                         <i class="material-icons prefix">person</i>
                         <input class="validate" required type="text" pattern="^((\d{3}\.){2}\d{3}-\d{2})|(\d){11}$" id="input-cpf-credito">
                         <label for="input-cpf-credito">CPF</label>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="input-field col s12 center">
+                        <button class="btn btn-large waves-effect waves-light">Confirmar deposito</button>
                     </div>
                 </div>
             </form>
