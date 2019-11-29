@@ -10,6 +10,10 @@
     margin-top: 20px;
 }
 
+main {
+    margin: 4em 0;
+}
+
 #btn-enter {
     position: relative;
     bottom: 5px;
@@ -53,8 +57,4 @@ h1 a:active {
 
 .img-100 {
     width: 100%;
-}
-
-.my-container {
-    padding: 0 1em;
 }
