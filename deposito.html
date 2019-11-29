@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Chipre Bank</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--Import Google Category Font-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <link rel="stylesheet" href="assets/libraries/materialize/css/materialize.min.css">
+    <link rel="stylesheet" href="assets/resources/styles/style.css">
+    
+    <script src="assets/libraries/jquery/jquery-2.2.4.min.js"></script>
+    <script src="assets/libraries/materialize/js/materialize.min.js"></script>
+</head>
+
+<body>
+    <div id="menu"></div>
+    
+    <main>
+        <div class="container">
+            <form id="form-deposito">
+                <label>Preencha seus dados</label>
+                <div class="row">
+                    <div class="input-field col s12 m6">
+                        <i class="material-icons prefix">person</i>
+                        <input class="validate" required type="text" pattern="^((\d{3}\.){2}\d{3}-\d{2})|(\d){11}$" id="input-cpf-debito">
+                        <label for="input-cpf-debito">CPF</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12 m6">
+                        <i class="material-icons prefix">lock</i>
+                        <input class="validate" required type="text" id="input-senha-confirmar">
+                        <label for="input-senha-confirmar">Senha</label>
+                        <span class="helper-text" data-error="Senha errada"></span>
+                    </div>
+                </div>
+                
+                <label>Digite o CPF da conta que vai receber</label>
+                <div class="row">
+                    <div class="input-field col s12 m6">
+                        <i class="material-icons prefix">person</i>
+                        <input class="validate" required type="text" pattern="^((\d{3}\.){2}\d{3}-\d{2})|(\d){11}$" id="input-cpf-credito">
+                        <label for="input-cpf-credito">CPF</label>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <div id="footer"></div>
+    
+    <script src="assets/resources/scripts/main.js"></script>
+    <script src="assets/resources/scripts/deposito.js"></script>
+</body>
+
+</html>
