@@ -5,19 +5,19 @@ Qualidade do código
 - [ ] Usar strict mode
 - [ ] Usar Module Pattern
 - [ ] Usar pasta assets e subpastas resources e libraries para organizar o código
-- [ ] Usar let ao invés de var
+- [x] Usar let ao invés de var
 - [ ] Nomes de arquivos minúsculos e separados por hífen (dashed-case)
 
 Caixas de Diálogo
 
-- [ ] prompt
-- [ ] alert
-- [ ] confirm
+- [x] prompt
+- [x] alert
+- [x] confirm
 
 Temporizadores
 
 - [ ] setInterval
-- [ ] setTimeout
+- [x] setTimeout
 
 Funções
 
@@ -76,7 +76,7 @@ Objetos Nativos
 
 Objetos
 
-- [ ] Criar objeto usando função construtora ou notação literal
+- [x] Criar objeto usando função construtora ou notação literal
 - [ ] Usar herança prototipal
 
 Canvas
