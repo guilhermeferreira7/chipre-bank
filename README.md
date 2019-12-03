@@ -28,8 +28,8 @@ Funções
 - [ ] Função auto-executável
 - [ ] Função com nome
 - [ ] Função aninhada/local - declarar uma função dentro de outra
-- [ ] Passagem de uma função como parâmetro
-- [ ] Função Flecha - Arrow Function
+- [x] Passagem de uma função como parâmetro
+- [x] Função Flecha - Arrow Function
 
 Eventos
 
@@ -72,7 +72,7 @@ Objetos Nativos
 - [ ] Usar pelo menos 3 métodos de manipulação de array
 - [ ] Usar laço de repetição (for..in ou for..of ou forEach)
 - [ ] Usar pelo menos 3 métodos para manipulação de string
-- [ ] String Template
+- [x] String Template
 
 Objetos
 
@@ -96,7 +96,7 @@ jQuery
 - [ ] Uso de seletores hierárquicos dinâmicos - parent/children/next
 - [ ] Efeitos fade ou slide
 - [ ] Especificar o tratador de algum evento via jQuery
-- [ ] Manipulação do CSS via função css() e addClass()/removeClass()
+- [x] Manipulação do CSS via função css() e addClass()/removeClass()
 - [ ] Manipulação do conteúdo de um input e div usando jQuery
 
 Manipular componentes do HTML5 API
