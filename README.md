@@ -43,7 +43,7 @@ Eventos
 Acesso aos elementos DOM do HTML
 
 - [ ] Via acesso direto pelo id do elemento HTML
-- [ ] Via getElementByID()
+- [x] Via getElementByID()
 - [ ] Via getElementsByName()
 - [ ] Via getElementsByTagName()
 - [ ] Via seletores CSS usados na função querySelector() ou querySelectorAll()
@@ -101,12 +101,12 @@ jQuery
 
 Manipular componentes do HTML5 API
 
-- [ ] map
+- [x] map
 - [ ] online ou visibilidade
 - [ ] audio ou video
 
 Web Storage
 
-- [ ] LocalStorage ou SessionStorage
-- [ ] Leitura e escrita de dados simples
-- [ ] Leitura e escrita de JSON
+- [x] LocalStorage ou SessionStorage
+- [x] Leitura e escrita de dados simples
+- [x] Leitura e escrita de JSON
