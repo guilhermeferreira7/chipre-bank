@@ -5,6 +5,7 @@
     <title>Chipre Bank</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="assets/resources/images/icon.ico">
 
     <!--Import Google Category Font-->
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
@@ -14,6 +15,7 @@
 
     <script src="assets/libraries/jquery/jquery-2.2.4.min.js"></script>
     <script src="assets/libraries/materialize/js/materialize.min.js"></script>
+    <script src="assets/libraries/accounting/accounting.js"></script>
 </head>
 
 
@@ -25,34 +27,52 @@
             <div class="myCard uppercase">
                 <div class="row">
                     <ul>
+                        <li class="blue-text">
+                            <span id="name-user"></span>
+                        </li>
+
                         <li class="col s12 m12 l6 center margin-up-and-down">
-                            <a href="transferencia.html" class="btn-large waves-effect waves-light green darken-3 options-width">
-                                <span>Tranferência</span>
+                            <a href="transferencia.html" class="btn-large green options-width">
+                                <i class="material-icons prefix">vertical_align_top</i>
+                                <span>Transferência</span>
                             </a>
                         </li>
                         <li class="col s12 m12 l6 center margin-up-and-down">
-                            <a href="deposito.html" class="btn-large waves-effect waves-light green darken-3 options-width">
+                            <a href="deposito.html" class="btn-large green options-width">
+                                <i class="material-icons prefix">vertical_align_bottom</i>
                                 <span>Depósito</span>
                             </a>
                         </li>
                         <li class="col s12 m12 l6 center margin-up-and-down">
-                            <a href="extrato.html" class="btn-large waves-effect waves-light green darken-3 options-width">
+                            <a href="extrato.html" class="btn-large green options-width">
+                                <i class="material-icons prefix">receipt</i>
                                 <span>Extrato</span>
                             </a>
                         </li>
                         <li class="col s12 m12 l6 center margin-up-and-down">
-                            <a href="configuracoes.html" class="btn-large waves-effect waves-light green darken-3 options-width">
-                                <span>Configurações da Conta</span>
+                            <a href="configuracoes.html" class="btn-large green card-panel options-width">
+                                <i class="material-icons prefix">build</i>
+                                <span>Conta</span>
                             </a>
                         </li>
                         <li class="col s12 m12 l6 offset-l3 center margin-up-and-down">
-                            <a href="#" class="btn-large waves-effect waves-light green darken-3 options-width">
-                                <span>Saldo</span>
+                            <a href="#" class="flow-text">
+                                <span id="saldo"></span>
                             </a>
                         </li>
                     </ul>
                 </div>
             </div>
+        </div>
+        <div>
+            <ul>
+                <li class="col s12 m12 l12 center margin-up-and-down">
+                    <a href="http://localhost:3000/" target="_blank" class="btn-large green card-panel options-width">
+                        <i class="material-icons prefix">error_outline</i>
+                        <span>Contato</span>
+                    </a>
+                </li>
+            </ul>
         </div>
     </main>
 

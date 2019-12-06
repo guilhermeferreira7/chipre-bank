@@ -58,3 +58,17 @@ h1 a:active {
 .img-100 {
     width: 100%;
 }
+
+i {
+    margin-bottom: 40px;
+}
+
+#logo > img  {
+    height: 5em;
+}
+
+#img-propaganda {
+    height: 350px;
+}
+
+

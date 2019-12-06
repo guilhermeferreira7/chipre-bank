@@ -5,14 +5,11 @@ window.addEventListener('load', ()=> {
     let imgPropaganda = document.querySelector('#img-propaganda');
     
     linkCriarConta.onmouseover = function() {
-        linkCriarConta.classList.remove('green-text', 'text-darken-3');
-        linkCriarConta.classList.add('green', 'white-text','darken-3');
+      $('#abre-conta-link').attr({style: 'text-decoration: underline'});
     };
-    
+
     linkCriarConta.onmouseleave = function() {
-        linkCriarConta.classList.remove('green');
-        linkCriarConta.classList.remove('white-text');
-        linkCriarConta.classList.add('green-text', 'text-darken-3');
+        $('#abre-conta-link').attr({style: 'text-decoration: none'});
     };
 
     (function mudaPropaganda() {

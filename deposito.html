@@ -5,6 +5,7 @@
     <title>Chipre Bank</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="assets/resources/images/icon.ico">
 
     <!--Import Google Category Font-->
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
@@ -21,31 +22,19 @@
     
     <main>
         <div class="container">
-            <form id="form-transferencia">
-                <label>Preencha seus dados</label>
+            <form id="form-deposito">
+                <label>Preencha o valor do depósito</label>
                 <div class="row">
                     <div class="input-field col s12 m6">
-                        <i class="material-icons prefix">person</i>
-                        <input class="validate" required type="text" pattern="^((\d{3}\.){2}\d{3}-\d{2})|(\d){11}$" id="input-cpf-confirmar">
-                        <label for="input-cpf-confirmar">CPF</label>
-                        <span class="helper-text" data-error="CPF inválido!"></span>
-                    </div>
-                    <div class="input-field col s12 m6">
-                        <i class="material-icons prefix">lock</i>
-                        <input class="validate" required type="text" id="input-senha-confirmar">
-                        <label for="input-senha-confirmar">Senha</label>
-                        <span class="helper-text" data-error="Senha errada"></span>
-                    </div>
-                    <div class="input-field col s12 m6">
                         <i class="material-icons prefix">attach_money</i>
-                        <input class="validate" required type="number" min="1" id="input-valor">
+                        <input class="validate" required type="number" min="1" step="0.01" id="input-valor">
                         <label for="input-valor">Valor</label>
                     </div>
                 </div>
                 
                 <div class="row">
                     <div class="input-field col s12 center">
-                        <button class="btn btn-large waves-effect waves-light">Confirmar depósito</button>
+                        <button id="input-confirmar" class="btn btn-large waves-effect waves-light">Confirmar depósito</button>
                     </div>
                 </div>
             </form>
@@ -53,7 +42,10 @@
     </main>
 
     <div id="footer"></div>
-    
+
+    <script src="assets/resources/scripts/accounts.js"></script>
+    <script src="assets/resources/scripts/movimentacoes.js"></script>
+    <script src="assets/resources/scripts/classdate.js"></script>
     <script src="assets/resources/scripts/main.js"></script>
     <script src="assets/resources/scripts/deposito.js"></script>
 </body>

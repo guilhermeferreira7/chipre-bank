@@ -1,4 +1,15 @@
 'use strict';
+
+let Conta = function(nome, cpf, endereco, email, telefone, senha) {
+    this.nome = nome;
+    this.cpf = cpf;
+    this.endereco = endereco;
+    this.email = email;
+    this.telefone = telefone;
+    this.senha = senha;
+    this.saldo = 0.0;
+};
+
 let $id = function(id) {
     return document.getElementById(id);
 };
@@ -37,11 +48,39 @@ window.addEventListener('load', function() {
     senha.onblur = function() {
         senhaRepetida.setAttribute('pattern', senha.value);
     };
-    
-    let form = $id('criar-conta');
-    
-    form.onsubmit = function(e) {
-        
+
+
+    $id('criar-conta').onsubmit = function(e) {
+        e.preventDefault();
+
+        let conta = new Conta(nome.value, cpf.value, endereco.value, email.value, telefone.value, senha.value);
+        let accounts = new Accounts(cpf.value);
+        let movs = new Movimentacoes(cpf.value);
+
+        if(accounts.thisAccount === undefined) {
+            let depositoInicial = 0.0;
+            if(confirm('Conta aberta com sucesso!\nDeseja realizar um deposito inicial?')) {
+                depositoInicial = prompt('Digite o valor do deposito. Ele será creditado na sua conta imediatamente.', '0,00');
+                if(depositoInicial.includes(',')) {
+                    depositoInicial = depositoInicial.replace(',', '.');
+                    depositoInicial = parseFloat(depositoInicial);
+                }
+            }
+            if(isNaN(depositoInicial)) {
+                alert('Deposito inicial inválido. Faça um depósito pelo menu do usuário.');
+                depositoInicial = 0.0;
+            }
+
+            conta.saldo = parseFloat(depositoInicial);
+
+            accounts.thisAccount = conta;
+            accounts.save();
+            movs.newAccount(conta);
+
+            window.location.replace('index.html');
+        } else {
+            alert('Já existe uma conta com esse CPF. Por favor, insira seu CPF e sua senha na parte de login.');
+        }
     };
 });
 
