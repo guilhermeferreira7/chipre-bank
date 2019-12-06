@@ -12,17 +12,6 @@ window.addEventListener('load', function() {
 
     userSaldo = numeros.join('');
 
-    // userSaldo = userSaldo + '';
-
-    // if(parseFloat(thisAccount.saldo) > 1000)
-    //     userSaldo = userSaldo.replace('.', '-');
-
-    // if(userSaldo.includes('.'))
-    //    userSaldo = userSaldo.replace('.', ',');
-
-    // userSaldo = userSaldo.replace('-', ',');
-
-
     $('#menu').load('menu-readylogin.html');
 
     $('#saldo').text(`Saldo: R\$${userSaldo}`);
