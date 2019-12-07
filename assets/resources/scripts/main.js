@@ -14,6 +14,8 @@ let logIn = localStorage.getItem('session') === 'None';
             let inputCpf = $id('input-cpf');
             let inputSenha = $id('input-senha');
 
+            $('#input-cpf').mask('000.000.000-00');
+
             inputCpf.onfocus = function() {
                 inputCpf.setAttribute('placeholder', '000.000.000-00');
             };
