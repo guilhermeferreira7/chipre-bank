@@ -2,6 +2,8 @@
 
 let cpf = localStorage.getItem('session');
 
+$('#input-cpf-credito').mask('000.000.000-00');
+
 document.getElementById('form-transferencia').addEventListener('submit', function (e) {
     e.preventDefault();
 
