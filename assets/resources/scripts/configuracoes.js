@@ -2,6 +2,20 @@
 let cpf = localStorage.getItem('session');
 let conta = new Accounts(cpf);
 
+$('#info').click(() => {
+    let dados = '';
+    conta = conta.thisAccount;
+    
+    dados += `Nome: ${conta.nome}`;
+    dados += `\nCPF: ${conta.cpf}`;
+    dados += `\nEndereço: ${conta.endereco}`;
+    dados += `\nEmail: ${conta.email}`;
+    dados += `\nTelefone: ${conta.telefone}`;
+    dados += `\nSaldo: ${conta.saldo}`;
+
+    window.alert(`Dados cadastrados:\n${dados}`);
+});
+
 $('#input-telefone').mask('(00) 00000-0000');
 
 function changePhoneMask() {
@@ -63,6 +77,7 @@ $('#form-config').submit((e) => {
         conta.save();
 
         window.alert(`Conta alterada com sucesso!\nSuas novas informações são:\n${novasInformações}`);
+        window.location.replace('menu-user.html');
 
     } else {
         window.alert('Senha errada! Não foi possível alterar as informações');
