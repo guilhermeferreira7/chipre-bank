@@ -44,7 +44,30 @@ window.addEventListener('load', function() {
     validaPadraoCampo(telefone, 'O telefone deve estar no formato "(42) 99999-0000"');
     validaPadraoCampo(senha, 'A senha deve ter de 4 a 8 caracteres');
 
-    //gambiarra?
+    let $telefone = $('#input-telefone');
+
+    $('#input-cpf-novo').mask('000.000.000-00');
+
+    $telefone.mask('(00) 00000-0000');
+
+    function changePhoneMask() {
+        let inpLenght = $telefone.val().length;
+
+        if(inpLenght < 15){
+            $telefone.mask('(00) 0000-00009');
+        } else if (inpLenght === 15) {
+            $telefone.mask('(00) 00000-0000');
+        }
+    }
+
+    $telefone.blur(()=> {
+        changePhoneMask();
+    });
+
+    $telefone.focus(()=> {
+        changePhoneMask();
+    });
+
     senha.onblur = function() {
         senhaRepetida.setAttribute('pattern', senha.value);
     };
