@@ -4,14 +4,13 @@ let conta = new Accounts(cpf);
 
 $('#info').click(() => {
     let dados = '';
-    conta = conta.thisAccount;
     
-    dados += `Nome: ${conta.nome}`;
-    dados += `\nCPF: ${conta.cpf}`;
-    dados += `\nEndereço: ${conta.endereco}`;
-    dados += `\nEmail: ${conta.email}`;
-    dados += `\nTelefone: ${conta.telefone}`;
-    dados += `\nSaldo: ${conta.saldo}`;
+    dados += `Nome: ${conta.thisAccount.nome}`;
+    dados += `\nCPF: ${conta.thisAccount.cpf}`;
+    dados += `\nEndereço: ${conta.thisAccount.endereco}`;
+    dados += `\nEmail: ${conta.thisAccount.email}`;
+    dados += `\nTelefone: ${conta.thisAccount.telefone}`;
+    dados += `\nSaldo: ${conta.thisAccount.saldo}`;
 
     window.alert(`Dados cadastrados:\n${dados}`);
 });
