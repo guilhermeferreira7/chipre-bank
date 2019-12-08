@@ -5,11 +5,13 @@ window.addEventListener('load', ()=> {
     let imgPropaganda = document.querySelector('#img-propaganda');
     
     linkCriarConta.onmouseover = function() {
-      $('#abre-conta-link').attr({style: 'text-decoration: underline'});
+      $('#abre-conta-link').css('text-decoration',  'underline');
+      $('#abre-conta-link').addClass('white-text green darken-3');
     };
 
     linkCriarConta.onmouseleave = function() {
-        $('#abre-conta-link').attr({style: 'text-decoration: none'});
+        $('#abre-conta-link').css('text-decoration', 'none');
+        $('#abre-conta-link').removeClass('white-text green darken-3');
     };
 
     (function mudaPropaganda() {

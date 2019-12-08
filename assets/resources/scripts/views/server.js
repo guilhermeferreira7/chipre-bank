@@ -4,6 +4,27 @@
     const app = express();
     const mysql = require('mysql');
 
+    function createTable(conn) {
+        const sql = 'create table if not exists  clients(ID int NOT NULL AUTO_INCREMENT, Nome varchar(150) NOT NULL, CPF char(11) NOT NULL, email varchar(100) not null, opcao varchar(45), mensagem varchar(300) not null, PRIMARY KEY (ID))';
+    
+        conn.query(sql, function (error, results, fields) {
+            if(error) return console.log(error);
+            console.log('Table created!');
+        });
+    }
+    
+    function addRows(dados) {
+        const sql = "insert into clients(Nome, CPF, email, opcao, mensagem) values ?";
+        const values = [
+            [dados.nome, dados.cpf, dados.email, dados.opcao, dados.mensagem]
+        ];
+    
+        connection.query(sql, [values], function (error, results, fields) {
+            if(error) console.log(error);
+            console.log('Adicionou registros');
+            connection.end();
+        });
+    }
 
     app.use(bodyParser.urlencoded({extended: true}));
 
@@ -40,24 +61,3 @@ connection.connect(function (err) {
     createTable(connection);
 });
 
-function createTable(conn) {
-    const sql = 'create table if not exists  clients(ID int NOT NULL AUTO_INCREMENT, Nome varchar(150) NOT NULL, CPF char(11) NOT NULL, email varchar(100) not null, opcao varchar(45), mensagem varchar(300) not null, PRIMARY KEY (ID))';
-
-    conn.query(sql, function (error, results, fields) {
-        if(error) return console.log(error);
-        console.log('Table created!');
-    });
-}
-
-function addRows(dados) {
-    const sql = "insert into clients(Nome, CPF, email, opcao, mensagem) values ?";
-    const values = [
-        [dados.nome, dados.cpf, dados.email, dados.opcao, dados.mensagem]
-    ];
-
-    connection.query(sql, [values], function (error, results, fields) {
-        if(error) console.log(error);
-        console.log('Adicionou registros');
-        connection.end();
-    });
-}

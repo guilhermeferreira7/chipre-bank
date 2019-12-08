@@ -6,7 +6,7 @@ let mov = new Movimentacoes(cpf);
 
 $('#form-deposito').submit((e) => {
     e.preventDefault();
-    let deposito = parseFloat($('#input-valor').val());
+    let deposito = parseFloat(document.querySelector('#input-valor').value);
 
     account.thisAccount.saldo += deposito;
     mov.insertMovimentacaoDeposito(deposito, account.thisAccount);

@@ -2,7 +2,7 @@
 let cpf = localStorage.getItem('session');
 let conta = new Accounts(cpf);
 
-$('#info').click(() => {
+function mostrarInformacoes() {
     let dados = '';
     
     dados += `Nome: ${conta.thisAccount.nome}`;
@@ -13,7 +13,7 @@ $('#info').click(() => {
     dados += `\nSaldo: ${conta.thisAccount.saldo}`;
 
     window.alert(`Dados cadastrados:\n${dados}`);
-});
+}
 
 $('#input-telefone').mask('(00) 00000-0000');
 
@@ -44,9 +44,9 @@ $('#form-config').submit((e) => {
     let senhaNova = $('#input-senha-nova').val();
     let senhaConta = $('#input-senha-config').val();
 
-    function mudaEmail() {
+    let mudaEmail = function() {
         conta.thisAccount.email = emailNovo;
-    }
+    };
     
     function mudaSenha() {
         conta.thisAccount.senha = senhaNova;
