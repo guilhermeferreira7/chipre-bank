@@ -12,19 +12,19 @@
         <ul class="form-style-1">
             <li>
                 <label for="nome">Nome completo <span class="required">*</span></label>
-                <input id="nome" type="text" name="nome" class="field-divided" placeholder="Nome completo" />
+                <input required="required" id="nome" type="text" name="nome" class="field-divided" placeholder="Nome completo" />
             </li>
             <li>
                 <label for="cpf">CPF somente números<span class="required">*</span></label>
-                <input id="cpf" type="text" name="cpf" class="field-divided" placeholder="CPF" />
+                <input required="required" id="cpf" type="text" name="cpf" class="field-divided" placeholder="CPF" />
             </li>
             <li>
                 <label for="email">Email <span class="required">*</span></label>
-                <input id="email" type="email" name="email" class="field-long" />
+                <input required="required" id="email" type="email" name="email" class="field-long" />
             </li>
             <li>
                 <label for="op">Opção</label>
-                <select id="op" name="opcao" class="field-select">
+                <select required="required" id="op" name="opcao" class="field-select">
                     <option value="Sugerir">Sugerir</option>
                     <option value="Elogiar">Elogiar</option>
                     <option value="Reclamar">Reclamar</option>
@@ -32,7 +32,7 @@
             </li>
             <li>
                 <label for="msg">Sua mensagem <span class="required">*</span></label>
-                <textarea name="mensagem" id="msg" maxlength="300" class="field-long field-textarea"></textarea>
+                <textarea required="required" name="mensagem" id="msg" maxlength="300" class="field-long field-textarea"></textarea>
             </li>
             <li>
                 <input type="submit" value="Enviar" />
