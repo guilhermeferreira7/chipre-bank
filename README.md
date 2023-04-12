@@ -1,3 +1,5 @@
+### Sistema desenvolvido para a disciplina de Desenvolvimento Web 2. É apenas uma aplicação simples que simula um banco virtual usando JavaScript puro, com um pouco de jQuery. O sistema tem muitas coisas de validações manuais, diferentes tipos de funcões e variáveis, tratamento de eventos entre outros (como podem ser vistos na checklist). Foi criado apenas para aprender os fundamentos básicos de JavaScript para web, e boas práticas. 
+
 https://guilhermeferreira7.github.io/chipre-bank/
 
 Qualidade do código
